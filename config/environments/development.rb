@@ -34,4 +34,6 @@ RackCasExample::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  config.rack_cas.server_url = 'http://casino.dev/'
 end

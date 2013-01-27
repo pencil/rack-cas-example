@@ -58,5 +58,8 @@ module RackCasExample
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    require 'rack-cas/session_store/active_record'
+    config.rack_cas.session_store = RackCAS::ActiveRecordStore
   end
 end
